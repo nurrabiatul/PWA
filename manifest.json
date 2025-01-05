@@ -1,0 +1,22 @@
+{
+    "name": "E-Commerce Skincare",
+    "short_name": "Skincare Shop",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#eaf4fc",
+    "theme_color": "#92bce6",
+    "description": "Aplikasi e-commerce untuk membeli skincare terbaik!",
+    "icons": [
+      {
+        "src": "/icons/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
