@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Toko Waybee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Halaman Login -->
+    <div id="login-page" class="login-page">
+        <div class="login-container">
+            <h2>Login ke Toko Waybee</h2>
+            <form id="login-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Masukkan username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Masukkan password">
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Halaman Utama -->
+    <div id="main-page" style="display: none;">
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <h1>Toko Waybee</h1>
+                    <div class="cart-icon" onclick="toggleCart()">🛒 <span class="cart-count">0</span></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <div class="products"></div>
+        </main>
+
+        <div class="cart-modal">
+            <div class="cart-content">
+                <h2>Keranjang Belanja</h2>
+                <span class="close-modal" onclick="toggleCart()">×</span>
+                <div id="cart-items"></div>
+                <div class="checkout-section">
+                    <p>Total: <span id="cart-total">Rp 0</span></p>
+                    <button class="add-to-cart" onclick="showPaymentModal()">Bayar Sekarang</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-modal">
+            <h2>Pilih Metode Pembayaran</h2>
+            <span class="close-modal" onclick="closePaymentModal()">×</span>
+            <div class="payment-option" onclick="processPayment('transfer')">Transfer Bank</div>
+            <div class="payment-option" onclick="processPayment('ewallet')">E-Wallet</div>
+            <div class="payment-option" onclick="processPayment('cod')">Cash on Delivery</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
