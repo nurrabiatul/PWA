@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Halaman Login -->
     <div id="login-page" class="login-page">
         <div class="login-container">
             <h2>Login ke Toko Waybee</h2>
@@ -25,7 +24,6 @@
         </div>
     </div>
 
-    <!-- Halaman Utama -->
     <div id="main-page" style="display: none;">
         <header>
             <div class="container">
@@ -55,12 +53,25 @@
         <div class="payment-modal">
             <h2>Pilih Metode Pembayaran</h2>
             <span class="close-modal" onclick="closePaymentModal()">×</span>
-            <div class="payment-option" onclick="processPayment('transfer')">Transfer Bank</div>
-            <div class="payment-option" onclick="processPayment('ewallet')">E-Wallet</div>
-            <div class="payment-option" onclick="processPayment('cod')">Cash on Delivery</div>
+            <div class="payment-option" onclick="selectPaymentMethod('transfer')">Transfer Bank</div>
+            <div class="payment-option" onclick="selectPaymentMethod('ewallet')">E-Wallet</div>
+            <div class="payment-option" onclick="processPayment('cod')">Cash on Delivery (COD)</div> <!-- Opsi COD ditambahkan -->
+            <div id="payment-sub-options" style="display: none;">
+                <div id="transfer-options" style="display: none;">
+                    <h3>Pilih Bank</h3>
+                    <div class="payment-option" onclick="processPayment('transfer', 'BCA')">Bank BCA</div>
+                    <div class="payment-option" onclick="processPayment('transfer', 'Mandiri')">Bank Mandiri</div>
+                    <div class="payment-option" onclick="processPayment('transfer', 'BNI')">Bank BNI</div>
+                </div>
+                <div id="ewallet-options" style="display: none;">
+                    <h3>Pilih E-Wallet</h3>
+                    <div class="payment-option" onclick="processPayment('ewallet', 'GoPay')">GoPay</div>
+                    <div class="payment-option" onclick="processPayment('ewallet', 'DANA')">DANA</div>
+                    <div class="payment-option" onclick="processPayment('ewallet', 'OVO')">OVO</div>
+                </div>
+            </div>
         </div>
-    </div>
-
+                
     <script src="script.js"></script>
 </body>
 </html>
