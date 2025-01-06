@@ -1,26 +1,27 @@
-/* Halaman Login */
 .login-page {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh;
-    background-color: #eaf4fc; /* Soft Blue */
-    color: #2e3a47; /* Biru lembut */
+    background-color: #1c1f2b;
+    color: #b0c7db;
 }
 
 .login-container {
-    background-color: #ffffff;
+    background-color: #2d344e;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(102, 153, 204, 0.5);
+    box-shadow: 0 4px 15px rgba(40, 80, 120, 0.6);
     width: 100%;
     max-width: 400px;
     text-align: center;
+    background-image: url('path_to_shadow_blue_background');
+    background-size: cover;
 }
 
 h2 {
     margin-bottom: 20px;
-    color: #4a6a91; /* Soft Blue */
+    color: #7fb1d3;
 }
 
 .form-group {
@@ -31,26 +32,27 @@ h2 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #2e3a47;
+    color: #b0c7db;
 }
 
 input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #b5c8d6;
+    border: 1px solid #333;
     border-radius: 4px;
     font-size: 1rem;
-    color: #2e3a47;
+    color: #b0c7db;
+    background-color: #2d344e;
 }
 
 input:focus {
-    border-color: #92bce6;
+    border-color: #69a1d1;
     outline: none;
 }
 
 .login-btn {
-    background-color: #92bce6;
-    color: white;
+    background-color: #69a1d1;
+    color: black;
     border: none;
     padding: 10px;
     border-radius: 4px;
@@ -61,32 +63,32 @@ input:focus {
 }
 
 .login-btn:hover {
-    background-color: #78a9d3;
+    background-color: #577b9f;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Pacifico', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 body {
-    padding-top: 80px; /* Menambahkan padding untuk kompensasi fixed header */
-    background-color: #eaf4fc; /* Latar belakang soft blue */
-    color: #2e3a47; /* Teks biru keabuan lembut */
+    padding-top: 80px;
+    background-color: #1c1f2b;
+    color: #b0c7db;
 }
 
 header {
-    background-color: #cde4f8; /* Header dengan biru lembut */
-    color: #2e3a47; /* Teks biru keabuan */
+    background-color: #2d344e;
+    color: #b0c7db;
     padding: 1rem;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
-    height: 80px; /* Tetapkan tinggi header */
-    box-shadow: 0 4px 10px rgba(102, 153, 204, 0.4); /* Efek bayangan lembut */
+    height: 80px;
+    box-shadow: 0 4px 15px rgba(40, 80, 120, 0.6);
 }
 
 .container {
@@ -102,7 +104,7 @@ header {
 }
 
 .header-content h1 {
-    margin: 0 auto; /* Mengatur margin otomatis */
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -116,8 +118,8 @@ header {
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: #f6fbff; /* Background lembut untuk notifikasi */
-    color: #2e3a47; /* Teks biru keabuan */
+    background-color: #f2a7c5;
+    color: #1c1f2b;
     border-radius: 50%;
     padding: 2px 6px;
     font-size: 12px;
@@ -125,7 +127,7 @@ header {
 
 main {
     padding: 20px;
-    min-height: calc(100vh - 80px); /* Minimal tinggi konten */
+    min-height: calc(100vh - 80px);
 }
 
 .products {
@@ -136,16 +138,16 @@ main {
 }
 
 .product-card {
-    border: 1px solid #b5c8d6; /* Border biru lembut */
+    border: 1px solid #444;
     padding: 10px;
     border-radius: 8px;
-    background: #ffffff; /* Background putih bersih */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek hover lembut */
+    background: #2d344e;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-    transform: scale(1.05); /* Zoom effect saat hover */
-    box-shadow: 0 4px 10px rgba(3, 110, 217, 0.5); /* Efek bayangan biru lembut */
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(40, 80, 120, 0.6);
 }
 
 .product-image {
@@ -162,19 +164,19 @@ main {
 .product-title {
     font-size: 1.2rem;
     margin-bottom: 5px;
-    color: #4a6a91; /* Biru lembut untuk judul produk */
+    color: #b0c7db;
 }
 
 .product-price {
-    color: #2e3a47; /* Biru keabuan lembut untuk harga */
+    color: #f2a7c5;
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
 .add-to-cart {
-    background-color: #92bce6; /* Biru soft untuk tombol */
-    color: #ffffff; /* Teks putih */
+    background-color: #69a1d1;
+    color: black;
     border: none;
     padding: 10px;
     border-radius: 4px;
@@ -185,7 +187,7 @@ main {
 }
 
 .add-to-cart:hover {
-    background-color: #5ba0dc; /* Biru lembut lebih gelap saat hover */
+    background-color: #577b9f;
 }
 
 .cart-modal {
@@ -195,7 +197,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(192, 216, 239, 0.8); /* Latar belakang transparan biru lembut */
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
 }
 
@@ -205,18 +207,18 @@ main {
     top: 0;
     width: 400px;
     height: 100%;
-    background-color: #f0f8ff; /* Latar belakang soft blue */
+    background-color: #2d344e;
     padding: 20px;
     overflow-y: auto;
-    box-shadow: -2px 0 10px rgba(102, 153, 204, 0.4); /* Efek bayangan lembut */
+    box-shadow: -2px 0 15px rgba(40, 80, 120, 0.6);
 }
 
 .cart-item {
     display: flex;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #b5c8d6;
-    background-color: #f8fdff; /* Background putih bersih */
+    border-bottom: 1px solid #444;
+    background-color: #444;
 }
 
 .cart-item img {
@@ -233,8 +235,8 @@ main {
 }
 
 .quantity-btn {
-    background-color: #92bce6; /* Tombol biru lembut */
-    color: white;
+    background-color: #69a1d1;
+    color: black;
     border: none;
     padding: 5px 10px;
     border-radius: 4px;
@@ -243,7 +245,7 @@ main {
 }
 
 .quantity-btn:hover {
-    background-color: #78a9d3; /* Tombol biru lebih gelap saat hover */
+    background-color: #577b9f;
 }
 
 .checkout-section {
@@ -251,9 +253,9 @@ main {
     bottom: 0;
     right: 0;
     width: 400px;
-    background-color: #ffffff;
+    background-color: #1c1f2b;
     padding: 20px;
-    border-top: 1px solid #b5c8d6;
+    border-top: 1px solid #444;
 }
 
 .payment-modal {
@@ -262,39 +264,118 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f0f8ff; /* Latar belakang biru lembut */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 8px;
     z-index: 1100;
     width: 400px;
-    box-shadow: 0 4px 20px rgba(8, 115, 223, 0.5); /* Efek bayangan lembut */
+    box-shadow: 0 4px 20px rgba(40, 80, 120, 0.6);
 }
 
-.close-modal {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    cursor: pointer;
-    font-size: 25px;
-    color: #4a6a91; /* Biru lembut */
+.payment-box {
+    background-color: #2d344e;
+    width: 30%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(40, 80, 120, 0.6);
+    color: #b0c7db;
+}
+
+.payment-modal h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #7fb1d3;
 }
 
 .payment-option {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #b5c8d6; /* Border biru lembut */
-    border-radius: 4px;
+    background-color: #2d344e;
+    padding: 12px;
+    margin: 8px 0;
+    text-align: center;
     cursor: pointer;
-    background-color: #e9eef8; /* Background putih */
-    color: #2e3a47;
+    border-radius: 8px;
+    border: 1px solid #555;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
-.payment-option:hover {
-    background-color: #73beff; /* Biru lembut saat hover */
-    color: #2e3a47;
+.payment-option:hover,
+#transfer-options div:hover,
+#ewallet-options div:hover {
+    background-color: #69a1d1;
+}
+
+.close-modal {
+    font-size: 20px;
+    color: #69a1d1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.payment-modal .close-modal:hover {
+    color: #f2a7c5;
+}
+
+.payment-modal #payment-sub-options {
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+}
+
+.payment-modal #payment-sub-options div {
+    background-color: #2d344e;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.payment-modal #payment-sub-options div:hover {
+    background-color: #69a1d1;
+}
+
+#transfer-options {
+    display: none;
+}
+
+#transfer-options div {
+    background-color: #2d344e;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#transfer-options div:hover {
+    background-color: #09345a;
+}
+
+#ewallet-options {
+    display: none;
+}
+
+#ewallet-options div {
+    background-color: #2d344e;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#ewallet-options div:hover {
+    background-color: #03294b;
 }
 
 html {
-    scroll-behavior: smooth; /* Menambahkan efek scroll halus */
+    scroll-behavior: smooth;
 }
